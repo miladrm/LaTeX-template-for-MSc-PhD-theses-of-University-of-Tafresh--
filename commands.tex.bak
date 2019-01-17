@@ -1,0 +1,273 @@
+% در این فایل، دستورها و تنظیمات مورد نیاز، آورده شده است.
+%-------------------------------------------------------------------------------------------------------------------
+
+% در ورژن جدید زی‌پرشین برای تایپ متن‌های ریاضی، این سه بسته، حتماً باید فراخوانی شود
+‎\usepackage{amsthm,amssymb,amsmath}‎
+% بسته‌ای برای تنطیم حاشیه‌های بالا، پایین، چپ و راست صفحه
+‎\usepackage{multirow}‎
+‎\usepackage{titlesec}‎
+
+‎\usepackage{ptext}‎
+‎\usepackage{titletoc}‎
+‎\usepackage{ptext}‎
+‎\usepackage{caption}‎
+
+‎\usepackage{enumerate}‎
+‎\usepackage{listings}‎
+
+
+‎\usepackage[inline,shortlabels]{enumitem}‎  
+
+
+
+
+‎\usepackage[top=2cm‎, ‎bottom=2.5cm‎, ‎left=2cm‎, ‎right=3cm]{geometry}‎
+% بسته‌‌ای برای ظاهر شدن شکل‌ها و تصاویر متن
+‎\usepackage{graphicx}‎
+% بسته‌ای برای رسم کادر
+‎\usepackage{framed}‎ 
+% بسته‌‌ای برای چاپ شدن خودکار تعداد صفحات در صفحه ‎«‎معرفی پایان‌نامه‎»‎
+‎\usepackage{lastpage}‎
+% بسته‌ و دستوراتی برای ایجاد لینک‌های رنگی با امکان جهش
+‎%\usepackage[pagebackref=false,colorlinks,linkcolor=blue,citecolor=blue]{hyperref}‎
+% چنانچه قصد پرینت گرفتن نوشته خود را دارید، خط بالا را غیرفعال و  از دستور زیر استفاده کنید چون در صورت استفاده از دستور زیر‌‌، 
+% لینک‌ها به رنگ سیاه ظاهر خواهند شد که برای پرینت گرفتن، مناسب‌تر است
+‎%\usepackage[pagebackref=false]{hyperref}‎
+% بسته‌ لازم برای تنظیم سربرگ‌ها
+‎\usepackage{fancyhdr}‎
+%
+‎\usepackage{setspace}‎
+‎\usepackage{algorithm}‎
+‎\usepackage{algorithmic}‎
+‎\usepackage{subfigure}‎
+‎\usepackage[subfigure]{tocloft}‎
+‎\renewcommand{\labelitemi}{$\bullet$}‎
+‎\usepackage{bidiftnxtra}‎
+‎\usepackage{tablefootnote}‎
+‎\usepackage{multirow}‎
+‎%\usepackage{caption}‎
+
+% بسته‌ای برای ظاهر شدن ‎«مراجع»‎ و ‎«نمایه»‎ در فهرست مطالب
+‎\usepackage[nottoc]{tocbibind}‎
+% دستورات مربوط به ایجاد نمایه
+‎\usepackage{makeidx}‎
+‎\makeindex‎
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% فراخوانی بسته زی‌پرشین و تعریف قلم فارسی و انگلیسی
+‎\usepackage{xepersian}‎
+‎\setlength{\parskip}{6pt}‎
+‎\baselineskip=1 cm‎
+‎\settextfont[Scale=1.3]{IRMitra.ttf}‎
+‎\setlatintextfont[Scale=1.1]{Times New Roman}‎
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% چنانچه می‌خواهید اعداد در فرمول‌ها، انگلیسی باشد، خط زیر را غیرفعال کنید
+‎\setdigitfont[Scale=1.3]{IRNazanin.ttf}%{Persian Modern}‎
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% تعریف قلم‌های فارسی و انگلیسی اضافی برای استفاده در بعضی از قسمت‌های متن
+‎\defpersianfont\titlefont[Scale=1]{IRTitr.ttf}‎
+‎%\defpersianfont\titr[Scale=1.4]{XB Titre}‎
+‎\defpersianfont\titra[Scale=1.4]{IRTitr.ttf}‎
+‎\defpersianfont\titrb[Scale=2.5]{IRTitr.ttf}‎
+‎\defpersianfont\titrc[Scale=2.2]{IRTitr.ttf}‎
+‎\defpersianfont\titrd[Scale=2.6]{IRTitr.ttf}‎
+‎\defpersianfont\titre[Scale=2.1]{IRTitr.ttf}‎
+‎\defpersianfont\mitrafonta[Scale=1.9]{IRMitraBold.ttf}‎
+‎\defpersianfont\mitrafontb[Scale=1.3]{IRMitraBold.ttf}‎
+
+‎\defpersianfont\nazfont[Scale=1.3]{IRNazanin.ttf}‎
+‎\defpersianfont\nazfontbold[Scale=1.3]{IRNazaninBold.ttf}‎
+
+‎\defpersianfont\tzarfont[Scale=1.2]{IRZarBold.ttf}‎
+‎\defpersianfont\zarfont[Scale=1.3]{IRZar.ttf}‎
+‎\defpersianfont\mitfont[Scale=1.2]{IRMitra.ttf}‎
+% ‎\defpersianfont\iranic[Scale=1.1]{XB Zar Oblique}%Italic}%‎
+‎\defpersianfont\nastaliq[Scale=1.2]{IranNastaliq}‎
+
+
+‎\defpersianfont\headfont[Scale=1.8]{IRLotusBold.ttf}‎
+‎\defpersianfont\sectionfont[Scale=1.6]{IRLotusBold.ttf}‎
+‎\defpersianfont\subsectionfont[Scale=1.4]{IRLotusBold.ttf}‎
+‎\defpersianfont\subsubsectionfont[Scale=1.3]{IRLotusBold.ttf}‎
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+‎\defpersianfont\cpf[Scale=1.2]{IRLotusBold.ttf}‎
+‎\DeclareCaptionFont{cpf}{\cpf}‎
+‎\captionsetup{textfont=cpf‎, ‎labelfont=cpf}‎
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+% دستوری برای حذف کلمه ‎«چکیده»‎
+‎\renewcommand{\abstractname}{}‎
+% دستوری برای حذف کلمه ‎«abstract»‎
+‎%\renewcommand{\latinabstract}{}‎
+% دستوری برای تغییر نام کلمه ‎«اثبات»‎ به ‎«برهان»‎
+‎\renewcommand\proofname{\textbf{برهان}}‎
+% دستوری برای تغییر نام کلمه ‎«کتاب‌نامه»‎ به ‎«مراجع»‎
+‎\renewcommand{\bibname}{مراجع}‎
+% دستوری برای تعریف واژه‌نامه انگلیسی به فارسی
+‎\newcommand\persiangloss[2]{#1\dotfill\lr{#2}\\}‎
+% دستوری برای تعریف واژه‌نامه فارسی به انگلیسی 
+‎\newcommand\englishgloss[2]{#2\dotfill\lr{#1}\\}‎
+% تعریف دستور جدید ‎«\پ»‎ برای خلاصه‌نویسی جهت نوشتن عبارت ‎«پروژه/پایان‌نامه/رساله»‎
+‎\newcommand{\‎پ}{پروژه/پایان‌نامه/رساله }
+
+‎%\newcommand\BackSlash{\char`\\}‎
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+‎\SepMark{-}‎
+
+% تعریف و نحوه ظاهر شدن عنوان قضیه‌ها، تعریف‌ها، مثال‌ها و ...
+‎\theoremstyle{definition}‎
+‎\newtheorem{definition}{\mitrafontb{تعریف}}[section]‎
+‎\theoremstyle{theorem}‎
+‎\newtheorem{theorem}[definition]{قضیه}‎
+‎\newtheorem{lemma}[definition]{لم}‎
+‎\newtheorem{proposition}[definition]{گزاره}‎
+‎\newtheorem{corollary}[definition]{نتیجه}‎
+‎\newtheorem{remark}[definition]{ملاحظه}‎
+‎\theoremstyle{definition}‎
+‎\newtheorem{example}[definition]{مثال}‎
+
+‎%\renewcommand{\theequation}{\thechapter-\arabic{equation}}‎
+‎%\def\bibname{مراجع}‎
+‎\numberwithin{algorithm}{chapter}‎
+\def\listalgorithmname{فهرست الگوریتم‌ها}
+\def\listfigurename{فهرست تصاویر}
+\def\listtablename{فهرست جداول}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% دستورهایی برای سفارشی کردن سربرگ صفحات
+‎%\csname@twosidetrue\endcsname‎
+‎\pagestyle{fancy}‎
+‎\fancyhf{}‎ 
+‎\fancyhead[OL,EL]{\thepage}‎
+‎\fancyhead[OR,ER]{\small\leftmark}‎
+‎\renewcommand{\chaptermark}[1]{%‎
+‎\markboth{#1}{}}‎
+‎\newcommand{\فا}[1]{#1\index{#1}}‎ 
+‎\newcommand{\ف}{\index}‎ 
+‎\newcommand{\فف}[1]{\index{\lr{#1}}}‎ 
+‎\newcommand{\LineStretch}[1]{\renewcommand{\baselinestretch}{#1}‎	
+‎\settextfont[Scale=1.1]{IRLotusBold.ttf}‎
+} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% دستورهایی برای سفارشی کردن سربرگ صفحات
+% ‎\newcommand{\SetHeader}{‎
+% ‎\csname@twosidetrue\endcsname‎
+% ‎\pagestyle{fancy}‎
+% ‎\fancyhf{}‎ 
+% ‎\fancyhead[OL,EL]{\thepage}‎
+% ‎\fancyhead[OR]{\small\rightmark}‎
+% ‎\fancyhead[ER]{\small\leftmark}‎
+% ‎\renewcommand{\chaptermark}[1]{%‎
+% ‎\markboth{\thechapter-\ #1}{}}‎
+% }
+‎%%%%%%%%%%%%5‎
+‎%\def\MATtextbaseline{1.5}‎
+‎%\renewcommand{\baselinestretch}{\MATtextbaseline}‎
+‎\doublespacing‎
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% دستوراتی برای شخصی سازی فهرست مطالب با توجه به شیوه نامه دانشگاه تفرش
+
+‎\newlength\mylenprt‎
+‎\newlength\mylenchp‎
+‎\newlength\mylenapp‎
+
+‎\renewcommand\cftpartpresnum{\partname~}‎
+‎\renewcommand\cftchappresnum{\chaptername~}‎
+‎\renewcommand\cftchapaftersnum{:}‎
+
+% شخصی سازی فصل ها در فهرست مطالب
+‎%\renewcommand{\cftchapfont}{\fontsize{15pt}{15pt}\nazfontbold}‎
+%شخصی سازی بخشها در فهرست مطالب
+‎\renewcommand{\cftsecfont}{\nazfont}‎
+%شخصی سازی کلمه ‎«‎فهرست مطالب‎»‎ 
+
+‎\renewcommand{\cfttoctitlefont}{\hfill\nazfontbold}‎ 
+‎\renewcommand{\cftaftertoctitle}{\hfill}‎
+%شخصی سازی کلمه فهرست تصاویر
+‎\renewcommand{\cftloftitlefont}{\hfill\nazfontbold}‎ 
+‎\renewcommand{\cftafterloftitle}{\hfill}‎
+%شخصی سازی کلمه فهرست جداول
+‎\renewcommand{\cftlottitlefont}{\hfill\nazfontbold}‎ 
+‎\renewcommand{\cftafterlottitle}{\hfill}‎
+
+
+
+
+
+‎\settowidth\mylenprt{\cftpartfont\cftpartpresnum\cftpartaftersnum}‎
+‎\settowidth\mylenchp{\cftchapfont\cftchappresnum\cftchapaftersnum}‎
+‎\settowidth\mylenapp{\cftchapfont\appendixname~\cftchapaftersnum}‎
+‎\addtolength\mylenprt{\cftpartnumwidth}‎
+‎\addtolength\mylenchp{\cftchapnumwidth}‎
+‎\addtolength\mylenapp{\cftchapnumwidth}‎
+
+‎\setlength\cftpartnumwidth{\mylenprt}‎
+‎\setlength\cftchapnumwidth{\mylenchp}‎	
+
+‎\makeatletter‎
+‎\bidi@patchcmd{\@makechapterhead}{\thechapter}{\tartibi{chapter}}{}{}‎
+‎\bidi@patchcmd{\chaptermark}{\thechapter}{\tartibi{chapter}}{}{}‎
+‎\makeatother‎
+
+
+‎\titlecontents{chapter}% <section-type>‎
+‎[0pt]% <left>‎
+{}% ‎<above-code>‎
+‎{\nazfontbold\chaptername\ \tartibinumeral{\thecontentslabel}:\quad\hfil}% <numbered-entry-format>‎
+{}% ‎<numberless-entry-format>‎
+‎{\bfseries\hfill\contentspage}% <filler-page-format>‎
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%
+
+
+
+‎\titleformat‎
+‎{\chapter} %comand‎
+‎[display] %Shape‎
+‎{\headfont}    %format‎
+‎{\vspace{-2.2cm}\centering \chaptername \hspace*{.1mm} \tartibi{chapter}} %label‎
+‎{0ex} %Sep‎
+‎{\vspace{.6cm} \centering} % before code‎
+‎[\vspace{1.5cm}] % after code‎
+
+
+
+
+
+
+‎\titleformat{\section}‎
+  ‎{\sectionfont}‎          
+  ‎{\thesection}{1em}{}‎ 
+
+‎\titleformat{\subsection}‎
+  ‎{\subsectionfont}‎          
+  ‎{\thesubsection}{1em}{}‎ 
+
+‎\titleformat{\subsubsection}‎
+  ‎{\subsubsectionfont}‎          
+  ‎{\thesubsubsection}{1em}{}‎ 
+
+
+
+

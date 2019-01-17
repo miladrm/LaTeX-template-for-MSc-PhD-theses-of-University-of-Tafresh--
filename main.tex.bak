@@ -1,0 +1,83 @@
+% ‎!TEX TS-program = XeLaTeX‎
+
+% ‎Commands for running this example‎:
+% 	 ‎xelatex main‎
+% 	 ‎bibtex8‎ -‎W‎ -‎c cp1256fa main‎
+%      ‎xindy‎ -‎L persian‎ -‎C utf8‎ -‎M texindy main‎
+% 	 ‎xelatex main‎
+% 	 ‎xelatex main‎
+% ‎End of Commands‎
+
+%        نمونه پایان‌نامه آماده شده با استفاده از کلاس ‎Tafresh-Thesis‎
+%			میلاد رفیعی، کارشناسی ارشد مهندسی صنایع، دانشگاه تفرش
+% 		گروه پارسی‌لاتک  ‎http://www.parsilatex.com‎
+%        این نسخه، بر اساس نسخه‌ ‎0.4‎ از کلاس ‎Tabriz_Thesis‎ آقای وحید دامن‌افشان آماده شده است. ‎http://damanafshan.tk‎
+%        
+%        
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%        اگر قصد نوشتن پروژه کارشناسی را دارید، در خط زیر به جای ‎msc‎، کلمه ‎bsc‎ و اگر قصد نوشتن پروژه دکترا
+%        را دارید، کلمه ‎phd‎ را قرار دهید. کلیه تنظیمات لازم، به طور خودکار، اعمال می‌شود.
+
+%        اگر مایلید پایان‌نامه شما دورو باشد به جای ‎oneside‎  در خط زیر از ‎twoside‎ استفاده کنید
+‎\documentclass[oneside,openany,msc]{Tafresh-Thesis}‎
+
+% مشخصات پایان‌نامه را در فایلهای ‎faTitle‎ و ‎enTitle‎ وارد نمایید.
+
+%       فایل ‎commands.tex‎ را مطالعه کنید؛ چون دستورات مربوط به فراخوانی بسته زی‌پرشین 
+%       و دیگر بسته‌ها و ... در این فایل قرار دارد و بهتر است که با نحوه استفاده از آنها آشنا شوید.
+‎\input{commands}‎
+
+‎\begin{document}‎
+‎\clearpage‎~
+‎\thispagestyle{empty}‎
+‎\pagenumbering{harfi}‎
+‎\input{faTitle}‎
+‎\tableofcontents‎
+
+‎\newpage‎
+‎\listoffigures \newpage‎
+‎\listoftables  \newpage‎
+‎%\addcontentsline{toc}{chapter}{\listalgorithmname}‎
+%اگر می‌خواهید لیست الگوریتم‌ها را داشته‌ باشید دستور زیر را فعال کنید
+‎%\listofalgorithms \newpage‎
+%اگر می‌خواهید فهرست علایم اختصاری را داشته‌ باشید دستور زیر را فعال کنید
+‎%\input{acronyms}‎
+‎\pagestyle{fancy}‎
+% اگر شما فصل اول  خود را در فایلی به جز ‎chapter1‎ همراه با این کلاس نوشته‌اید باید چندخط اول ‎chapter1‎ را در فایل خود کپی کنید.
+‎\include{intro}			%‎ فصل اول: مقدمه
+‎\include{latexIntro}		%‎ فصل دوم: آشنایی مقدماتی با لاتک
+‎\include{Season3}		%‎ فصل دوم: آشنایی مقدماتی با لاتک
+‎\include{Models}‎
+‎\include{MultiObjective}‎
+‎\include{Examples}‎
+‎‎\include{conclution}‎‎
+‎%\include{z2}‎
+‎%\include{zamime}‎
+
+‎\include{ReF}‎
+
+
+
+
+% مراجع
+
+
+
+‎\pagestyle{fancy}‎
+
+‎\appendix‎                           %فصلهای پس از این قسمت به عنوان ضمیمه خواهند آمد.
+% اگر شما پیوست اول  خود را در فایلی به جز ‎appendix1‎ همراه با این کلاس نوشته‌اید باید چندخط اول ‎appendix1‎ را در فایل خود کپی کنید.
+‎%\include{appendix1}		%‎ پیوست اول: مدیریت مراجع در لاتک
+‎%\include{appendix2}‎
+
+‎%\baselineskip=.75cm‎
+‎\onehalfspacing‎
+%اگر می خواهید واژه نامه فارسی به انگلیسی داشته باشید، دستور زیر را فعال کنید.
+‎%\include{dicfa2en}‎
+%اگر می خواهید واژه نامه انگلیسی به فارسی را داشته باشید، دستور زیر را فعال کنید.
+‎%\include{dicen2fa}‎
+‎\printindex‎
+‎\input{enTitle}‎
+‎\label{LastPage}‎
+
+‎\end{document}

@@ -1,0 +1,9 @@
+\contentsline {chapter}{فهرست تصاویر}{خ}
+\contentsline {chapter}{فهرست جداول}{د}
+\contentsline {chapter}{\numberline {1}مقدمه}{1}
+\contentsline {chapter}{\numberline {2}پیشینه تحقیق}{2}
+\contentsline {chapter}{\numberline {3}کمی‌سازی ریسک}{3}
+\contentsline {chapter}{\numberline {4}مدل‌های چندهدفه}{4}
+\contentsline {chapter}{\numberline {5}نتیجه‌گیری و پیشنهادات}{5}
+\contentsline {chapter}{مراجع}{6}
+\contentsfinish 
